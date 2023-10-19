@@ -1,0 +1,12 @@
+@import "var";
+
+.container {
+  width: 300px;
+  height: 400px;
+  border: 2px solid #000000;
+  background: $random-color;
+}
+
+body {
+  background: yellow;
+}
