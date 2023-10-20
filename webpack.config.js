@@ -55,10 +55,10 @@ module.exports = {
             filename: 'index.html',
             chunks: ['index'],
         }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         { from: 'src/assets/images', to: 'assets/images' }
-        //     ],
-        // }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/assets/images', to: 'assets/images' }
+            ],
+        }),
     ]
 }

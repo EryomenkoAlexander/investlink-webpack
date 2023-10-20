@@ -1,1 +1,26 @@
 @import "var";
+@import "drop";
+@import "fonts/gordita";
+@import "fonts/sanFranciscoProDisplay";
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $min-width-small) {
+    max-width: $container-max-width-mobile;
+  }
+
+  @media (min-width: $min-width-medium) {
+    max-width: $container-max-width-tablet;
+  }
+
+  @media (min-width: $min-width-large) {
+    max-width: $container-max-width-desktop;
+  }
+
+  @media (min-width: $min-width-extra-large) {
+    max-width: $container-max-width-large-desktop;
+  }
+}
