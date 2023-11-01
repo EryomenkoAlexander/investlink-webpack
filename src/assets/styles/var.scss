@@ -1,19 +1,51 @@
 // colors
-$black: #000;
-$white: #fff;
+$white: #FFFFFF;
+$black: #000000;
+
 $main-black: #212129;
-$gray-6: #F2F2F2;
-$gray-2: #8B9EB0;
-$gray-1: #5F7487;
-$slate-gray: #73757C;
-$steel-blue: #62656B;
+
+$red: #EB5757;
+
+$primary-color: #F3CC50;
+
+$primary: #2D264B;
+
+$grey-0: #475F76;
+$grey-1: #333333;
+$grey-2: #8B9EB0;
+$grey-3: #828282;
+$grey-4: #BDBDBD;
+$grey-5: #EDEFF4;
+$grey-6: #F2F2F2;
+
+$background-main: #F2F6F9;
+$background-black: #000000;
+$background-grey: #141419;
+$background-darkGrey: #151515;
+$background-white: #ffffff;
+
+$text-black: #363F41;
+
+$text-grey-0: #475F76;
+$text-grey-1: #5F7487;
+$text-grey-2: #8B9EB0;
+$text-grey-3: #B5C7D8;
+$text-grey-4: #CBD8E6;
+
+$lines-grey-3: #E1EBF4;
+$lines-yellow: #E1BF14;
+
+$input-error: #F8474C;
+
+$icons-standard: #BDC8D3;
+
+$link-color: #63BE37;
+$link-hover: #5583FF;
 
 // break points
-$min-width-small: 576px;
-$min-width-medium: 768px;
-$min-width-large: 992px;
-$min-width-extra-large: 1200px;
-$container-max-width-mobile: 540px;
-$container-max-width-tablet: 720px;
-$container-max-width-desktop: 960px;
-$container-max-width-large-desktop: 1140px;
+$max-width-large: 1320px;
+$max-width-medium: 960px;
+$max-width-small: 700px;
+
+// additional
+$default-transition: ease-in-out .2s;

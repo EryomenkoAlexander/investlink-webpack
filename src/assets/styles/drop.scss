@@ -1,5 +1,126 @@
+@import "var";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $main-black;
+}
+
+body {
+  background: $primary-color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-black;
+  font-family: 'SFProDisplay-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 15px;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gordita-Medium', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 52px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 43px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 34px;
+  }
+
+  @media (max-width: $max-width-small) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 27px;
+  }
+
+  @media (max-width: $max-width-small) {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $max-width-small) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 21px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 19px;
+  }
+
+  @media (max-width: $max-width-small) {
+    font-size: 17px;
+  }
+}
+
+h5 {
+  font-size: 22px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 17px;
+  }
+}
+
+h6 {
+  font-size: 17px;
+
+  @media (max-width: $max-width-large) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $max-width-small) {
+    font-size: 15px;
+  }
 }
