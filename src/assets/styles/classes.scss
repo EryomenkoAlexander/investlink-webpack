@@ -1,0 +1,21 @@
+@import "var";
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1350px;
+  width: 100%;
+
+  @media (max-width: $max-width-large) {
+    max-width: 960px;
+  }
+
+  @media (max-width: $max-width-medium) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $max-width-small) {
+    max-width: 540px;
+  }
+
+}
