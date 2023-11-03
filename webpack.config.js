@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/js/index.js',
-        page_1: './src/js/page_1.js',
     },
     output: {
         filename: '[name].bundle.js',
@@ -35,7 +34,19 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ],
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'assets/images',
+                        },
+                    },
+                ],
+            },
         ]
     },
     plugins: [
@@ -44,15 +55,10 @@ module.exports = {
             filename: 'index.html',
             chunks: ['index'],
         }),
-        new HtmlWebpackPlugin({
-            template: './src/pages/page_1.html',
-            filename: 'page_1.html',
-            chunks: ['page_1'],
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: 'src/assets/images', to: 'assets/images' }
-            ],
-        }),
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         { from: 'src/assets/images', to: 'assets/images' }
+        //     ],
+        // }),
     ]
 }

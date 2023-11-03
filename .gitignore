@@ -2,17 +2,32 @@
 node_modules/
 
 # Игнорировать файлы и директории, созданные Webpack при сборке проекта
-dist/
-build/
-.cache/
+/dist/
+/build/
+/.cache/
+/tmp/
+/out-tsc/
 
 # Игнорировать временные файлы
 .DS_Store
 Thumbs.db
 
-# Если вы используете текстовый редактор или IDE, добавьте свои настройки
+# Игнорировать файлы и директории Visual Studio Code
 .vscode/
+
+# Игнорировать файлы и директории IntelliJ IDEA
 .idea/
+/.idea/
+.project
+.classpath
+
+# Игнорировать файлы и директории Cloud9 IDE
+.c9/
+
+# Игнорировать файлы связанные с настройками и проектами
+*.launch
+.settings/
+*.sublime-workspace
 
 # Логи и файлы отладки
 *.log
