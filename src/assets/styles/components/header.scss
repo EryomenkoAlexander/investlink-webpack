@@ -1,5 +1,5 @@
-@import "mixins";
-@import "var";
+@import "../mixins";
+@import "../var";
 
 .main-header {
   position: fixed;
@@ -122,11 +122,15 @@
     .hamburger {
       height: 16px;
       width: 24px;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
       z-index: 130;
+
+      @media (max-width: $max-width-medium) {
+        display: flex;
+      }
 
       &.active {
         .line {
@@ -181,23 +185,51 @@
             &.active {
 
               .accordion-content {
-                height: 0;
+                padding: 0 15px;
+              }
+
+              .accordion-header {
+
+                .arrow-bottom {
+                    transform: rotate(180deg);
+                }
               }
             }
 
             .accordion-header {
               padding: 15px 0;
               border-bottom: 1px solid $grey-5;
+              @include flex-spaced-center
+
+              .arrow-bottom {
+                transition: ease-in-out .3s;
+              }
+
+              h4 {
+
+              }
             }
 
             .accordion-content {
-              padding: 15px 20px;
+              padding: 0 15px;
+              max-height: 0;
+              overflow: hidden;;
+              transition: max-height 0.5s ease-in-out, padding 0.4s ease-in-out;
 
               .item {
-                max-width: 320px;
-                width: 100%;
                 margin: 10px 0;
                 padding: 5px;
+                @include flex-spaced-center;
+
+                &:focus {
+                  background: $background-main;
+                }
+
+                .arrow-right {
+                  transform: rotate(270deg);
+                  opacity: .4;
+                  margin-left: 5px;
+                }
 
                 .item-description {
                   color: $text-grey-1;
