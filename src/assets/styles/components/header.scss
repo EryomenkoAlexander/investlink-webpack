@@ -173,8 +173,29 @@
       padding: 20px 40px;
       transition: right .4s ease-out;
       will-change: right;
+      display: none;
+
+      @media (max-width: $max-width-medium) {
+        display: block;
+      }
 
       .hamburger-menu-wrapper {
+
+        .download-links {
+          @include full-center;
+          gap: 10px;
+          margin-top: 20px;
+
+          .item {
+            display: block;
+            max-width: 154px;
+            width:  100%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
 
         .accordion {
           margin-top: 25px;
